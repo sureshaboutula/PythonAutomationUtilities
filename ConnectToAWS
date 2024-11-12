@@ -1,0 +1,14 @@
+1. Launch AWS and Login
+2. Create EC2 Instance - LinuxVM
+3. Connect to LinuxVM EC2
+- Go to folder where .pem file is present
+- run ssh -i <.pemfile> <ec2-user@PublicIP>
+4. Change password auth to yes
+- switch to root user --> sudo su -
+-run vi /etc/ssh/sshd_config
+-click i for Inser
+-change passwordAuthentication to yes
+-press Esc
+-type :wq then enter
+4. Create EC2 user password - ec2-user
+- run passwd ec2-user
